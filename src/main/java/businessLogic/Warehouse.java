@@ -1,5 +1,9 @@
 package businessLogic;
-
+/**
+ * 
+ * @author Peter
+ *Holds the articles that are added to the warehouse 
+ */
 public class Warehouse {
 	private Article[][] warehouse;
 	

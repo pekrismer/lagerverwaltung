@@ -1,5 +1,9 @@
 package businessLogic;
-
+/**
+ * 
+ * @author Peter
+ *
+ */
 public class Article {
 	private String articleDescription;
 	private String itemNumber;

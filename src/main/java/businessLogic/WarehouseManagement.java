@@ -1,5 +1,9 @@
 package businessLogic;
-
+/**
+ * 
+ * @author Peter
+ *Offers methods for managing the warehouse
+ */
 public class WarehouseManagement {
 	private Warehouse warehouse;
 	
@@ -27,6 +31,11 @@ public class WarehouseManagement {
 		}
 	}
 	
+	public Article getArticle(Integer[] position) {
+		Article article = warehouse.getWarehouse()[position[0]][position[1]];
+		return article;
+	}
+
 	public void removeArticle(Integer[] inventoryID){
 		warehouse.getWarehouse()[inventoryID[0]][inventoryID[1]] = null;
 	}
