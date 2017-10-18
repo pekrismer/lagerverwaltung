@@ -63,11 +63,11 @@ public class CLI {
 					else if (s.equals("6")) {
 						this.content();
 					}
-					}
-					
-					System.out.println();
-				scan.close();
 				}
+					
+				System.out.println();
+				scan.close();
+		}
 				
 			
 			
