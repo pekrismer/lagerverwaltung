@@ -41,7 +41,7 @@ public class CLI {
 				String s = "-";
 				while (!s.equals("x")) {
 
-					MenüAnzeigen();
+					MenueAnzeigen();
 					s = scan.nextLine().toLowerCase();
 					switch (s) {
 					case "1":
@@ -68,8 +68,8 @@ public class CLI {
 				scan.close();
 			}
 			
-			private void MenüAnzeigen() {
-				System.out.println("*************** MENÜ ****************");
+			private void MenueAnzeigen() {
+				System.out.println("*************** MENue ****************");
 				System.out.println("1) Konfigurieren");
 				System.out.println("2) Einlagern");
 				System.out.println("3) Ausliefern");
@@ -84,15 +84,15 @@ public class CLI {
 			Scanner sizeScanner = new Scanner(System.in);
 			boolean correctInput = false;
 			while(!correctInput){
-				System.out.print("Geben Sie ein wie viele Reihen hinzugefügt werden sollten:");
+				System.out.print("Geben Sie ein wie viele Reihen hinzugefuegt werden sollten:");
 				int row = sizeScanner.nextInt();
 				System.out.println();
-				System.out.print("Geben Sie ein wie viele Spalten hinzugefügt werden sollten:");
+				System.out.print("Geben Sie ein wie viele Spalten hinzugefuegt werden sollten:");
 				int column = sizeScanner.nextInt();
 				System.out.println();
 				
 				if(row < 0 || column < 0){
-					System.out.println("Ungültiger Wert! ");
+					System.out.println("Ungueltiger Wert! ");
 				}
 				else{
 					correctInput = true;
