@@ -40,36 +40,39 @@ public class CLI {
 		public void start() {
 				String s = "-";
 				while (!s.equals("x")) {
+					
 
 					MenueAnzeigen();
 					s = scan.nextLine().toLowerCase();
-					switch (s) {
-					case "1":
+					
+					if(s.equals("1")){
 						this.config();
-						break;
-					case "2":
-						this.add();
-						break;
-					case "3":
-						this.remove();
-						break;
-					case "4":
-						this.inventory();
-						break;
-					case "5":
-						this.position();
-						break;
-					case "6":
-						this.content();
-						break;
 					}
+					else if (s.equals("2")) {
+						this.add();
+					}
+					else if (s.equals("3")) {
+						this.remove();
+					}
+					else if (s.equals("4")) {
+						this.inventory();
+					}
+					else if (s.equals("5")) {
+						this.position();
+					}
+					else if (s.equals("6")) {
+						this.content();
+					}
+					}
+					
 					System.out.println();
-				}
 				scan.close();
-			}
+				}
+				
+			
 			
 			private void MenueAnzeigen() {
-				System.out.println("*************** MENue ****************");
+				System.out.println("*************** MENUE ****************");
 				System.out.println("1) Konfigurieren");
 				System.out.println("2) Einlagern");
 				System.out.println("3) Ausliefern");
