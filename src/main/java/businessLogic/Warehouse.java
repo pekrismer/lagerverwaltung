@@ -17,14 +17,14 @@ public class Warehouse {
 		return warehouse;
 	}
 	
-	public Article[][] extendWarehouse(Article[][] previousWarehouse, int rows, int columns){
-		Article[][] newWarehouse = previousWarehouse;
+	public Article[][] extendWarehouse(Article[][] warehouse2, int rows, int columns){
+		Article[][] newWarehouse = warehouse2;
 		for (int i = 0; i < rows; i++) {
-			newWarehouse = addRow(previousWarehouse);
+			newWarehouse = addRow(warehouse2);
 		}
 		
 		for (int i = 0; i < columns; i++) {
-			newWarehouse = addColumn(previousWarehouse);
+			newWarehouse = addColumn(warehouse2);
 		}
 		return newWarehouse;
 	}

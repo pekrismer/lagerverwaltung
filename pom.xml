@@ -12,7 +12,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>lagerverwaltung.businesslogic.Main</mainClass>
+              <mainClass>businessLogic.Main</mainClass>
             </manifest>
           </archive>
         </configuration>

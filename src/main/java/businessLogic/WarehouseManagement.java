@@ -64,6 +64,10 @@ public class WarehouseManagement {
 		return warehouse.toString();
 	}
 	
+	public Article[][] getWarehouseContent(){
+		return warehouse.getWarehouse();
+	}
+	
 	
 	
 	
